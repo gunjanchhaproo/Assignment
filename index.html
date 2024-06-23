@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-2.jpg');">
+			<div class="inner">
+				<form action="" onsubmit="return validateForm()">
+					<h3 style="font-size: 30px;">Registration Form</h3>
+					
+					<div class="form-group" style="margin-top: 10px;">
+						<div class="form-wrapper">
+							<label for="firstName" style="font-size: 15px;">First Name</label>
+							<input type="text" class="form-control" id="firstName" name="firstName" style="font-size: 15px;">
+							<span class="error" id="firstNameError" style="font-size: 15px;"></span>
+						</div>
+						<div class="form-wrapper">
+							<label for="lastName" style="font-size: 15px;">Last Name</label>
+							<input type="text" class="form-control" id="lastName" name="lastName" style="font-size: 15px;">
+							<span class="error" id="lastNameError" style="font-size: 15px;"></span>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<label for="email" style="font-size: 15px;">Email</label>
+						<input type="text" class="form-control" id="email" name="email" style="font-size: 15px;">
+						<span class="error" id="emailError" style="font-size: 15px;"></span>
+					</div>
+					<div class="form-wrapper">
+						<label for="password" style="font-size: 15px;">Password</label>
+						<input type="password" class="form-control" id="password" name="password" style="font-size: 15px;">
+						<span class="error" id="passwordError" style="font-size: 15px;"></span>
+					</div>
+					<div class="form-wrapper">
+						<label for="confirmPassword" style="font-size: 15px;">Confirm Password</label>
+						<input type="password" class="form-control" id="confirmPassword" name="confirmPassword" style="font-size: 15px;">
+						<span class="error" id="confirmPasswordError" style="font-size: 15px;"></span>
+					</div>
+					<button>Register Now</button>
+				</form>
+			</div>
+		</div>
+		<script src="script.js"></script>
+    	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container-fluid min-vh-100 d-flex align-items-center" style="background-image: url('images/bg-registration-form-2.jpg'); background-size: cover;">
+    <div class="container bg-light p-5 rounded shadow">
+        <form action="" onsubmit="return validateForm()">
+            <h3 class="text-center mb-4" style="font-size: 35px;">Registration Form</h3>
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName" style="font-size: 20px;">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" style="font-size: 15px;">
+                    <span class="text-danger" id="firstNameError" style="font-size: 15px;"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName" style="font-size: 20px;">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" style="font-size: 15px;">
+                    <span class="text-danger" id="lastNameError" style="font-size: 15px;"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" style="font-size: 20px;">Email</label>
+                <input type="text" class="form-control" id="email" name="email" style="font-size: 15px;">
+                <span class="text-danger" id="emailError" style="font-size: 15px;"></span>
+            </div>
+            <div class="form-group">
+                <label for="password" style="font-size: 20px;">Password</label>
+                <input type="password" class="form-control" id="password" name="password" style="font-size: 15px;">
+                <span class="text-danger" id="passwordError" style="font-size: 15px;"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword" style="font-size: 20px;">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" style="font-size: 15px;">
+                <span class="text-danger" id="confirmPasswordError" style="font-size: 15px;"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register Now</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" nomodule></script>
+
+</body>
+</html>
